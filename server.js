@@ -21,11 +21,15 @@ app.use(function(req, res, next) {
         next();
     });
 });
+
+function generalrequests(){
+	
+}
 //receive GET request from anywhere
 app.get('*', function(req, res) {
     // get request header as a JSON string, formatted with tabs
     var requestmethod = req.method;
-    var requestURL = req.url;
+    var requestURL = req.originalUrl;
     var requestheaders = JSON.stringify(req.headers, null, "\t");
     var requestparams = JSON.stringify(req.params, null, "\t");
 
@@ -46,7 +50,7 @@ app.get('*', function(req, res) {
 app.post('*', function(req, res) {
     // get request header as a JSON string, formatted with tabs
     var requestmethod = req.method;
-    var requestURL = req.url;
+    var requestURL = req.originalUrl;
     var requestheaders = JSON.stringify(req.headers, null, "\t");
     var requestparams = JSON.stringify(req.params, null, "\t");
     var requestbody = req.rawBody;
