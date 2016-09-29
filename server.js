@@ -4,8 +4,8 @@ var http = require('http');
 var fs = require('fs');
 app.use(express.static('public'));
 
-//receive a get request from somewhere
-app.get('/', function(req, res) {
+//receive any request from anywhere
+app.all('*', function(req, res) {
 	// get request header as a JSON string, formatted with tabs
   	var requestheaders = JSON.stringify(req.headers, null, "\t")
   	var requestURL = req.url;
