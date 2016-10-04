@@ -1,9 +1,10 @@
 # Print-GET/POST-Request-WebApp
-Simple node.js webapp that prints the GET request that it recieves.
+Simple node.js webapp that prints the GET or POST request that it recieves. If a GET request is recieved, it returns request method, url, parameters, and headers. If a POST request is recieved, it returns all of the above including the request body. The responses are in JSON format.
 
 Requirements
 
 - node.js
+- the github files
 
 Installation
 
