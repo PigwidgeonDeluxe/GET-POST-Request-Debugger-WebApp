@@ -1,5 +1,5 @@
 #GET/POST-Request-Debugger-WebApp
-Simple node.js webapp that prints the GET or POST request that it recieves for debugging purposes. If a GET request is recieved, it returns request method, url, parameters, and headers. If a POST request is recieved, it returns all of the above including the request body. The responses are in JSON format.
+Simple node.js webapp that prints the GET or POST request that it receives for debugging purposes. If a GET request is received, it returns request method, url, parameters, and headers. If a POST request is received, it returns all of the above including the request body. The responses are in JSON format.
 
 Requirements
 
