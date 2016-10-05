@@ -1,5 +1,5 @@
 {
-  "name": "getrequest_app",
+  "name": "requestdebugger_app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -9,6 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "multer": "^1.2.0",
+    "underscore": "^1.8.3"
   }
 }
